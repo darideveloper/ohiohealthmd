@@ -1,5 +1,8 @@
 const contact_buttons = document.querySelectorAll (".contact a.btn")
 
+window.onload = () => update_social_buttons()
+window.onresize = () => update_social_buttons()
+
 function update_social_buttons () {
     if (window.matchMedia("(max-width: 600px)").matches) {
         for (const contact_button of contact_buttons) {
@@ -14,4 +17,4 @@ function update_social_buttons () {
     }
 }
 
-update_social_buttons ()
+
