@@ -6,6 +6,12 @@ section.locations
         display: grid
         grid-template-columns: repeat(4, 1fr)
         gap: 20px
+        transition-duration: 0.5s
+        height: 280px
+        overflow: hidden
+
+        &.active
+            height: 580px
 
         article
             h3
@@ -44,17 +50,28 @@ section.locations
         svg
             display: inline-block
             padding: 10px
-            padding-top: 15px
-            height: 20px
+            padding-bottom: 10px
+            transition-duration: 0.5s
+
+        &.active
+            svg
+                transform: rotateZ(180deg)
+
 
     @media screen and (max-width: 1100px)
         .wrapper-locations
             grid-template-columns: repeat(3, 1fr)
 
-    @media screen and (max-width: 750px)
+    @media screen and (max-width: 850px)
         .wrapper-locations
             grid-template-columns: repeat(2, 1fr)
 
-    @media screen and (max-width: 470px)
+            &.active
+                height: 880px
+
+    @media screen and (max-width: 510px)
         .wrapper-locations
             grid-template-columns: repeat(1, 1fr)
+
+            &.active
+                height: 1750px
