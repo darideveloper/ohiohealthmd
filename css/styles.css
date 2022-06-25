@@ -80,4 +80,41 @@ h1, h2, h3, h4, h5, h6, .title {
   display: inline-block;
 }
 
+header {
+  background-color: #0070ab;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo {
+  background-color: #fefefe;
+  padding: 30px;
+}
+header .logo img {
+  width: 200px;
+}
+header nav {
+  width: calc(100% - 260px);
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a.title {
+  color: #fefefe;
+  font-size: 20px;
+  display: inline-block;
+  padding: 30px;
+}
+header nav ul li a.title:hover {
+  color: rgba(254, 254, 254, 0.7);
+}
+
 /*# sourceMappingURL=styles.css.map */
