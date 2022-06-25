@@ -54,7 +54,21 @@ a {
 
 h1, h2, h3, h4, h5, h6, .title {
   font-family: "Adelle W01", cursive;
+  color: #0b4264;
+}
+
+h1 {
+  font-size: 40px;
   color: #0070ab;
+}
+
+h2 {
+  font-size: 36px;
+  margin: 5px 0;
+}
+
+h3 {
+  font-size: 18px;
 }
 
 *:focus {
@@ -78,10 +92,6 @@ section.main-section {
   }
 }
 
-h1 {
-  font-size: 40px;
-}
-
 p {
   font-size: 16px;
   margin: 0;
@@ -97,6 +107,47 @@ p span {
 
 .btn {
   display: inline-block;
+  margin-top: 10px;
+  transition-duration: 0.5s;
+  border-radius: 5px;
+  border: 1px solid #0070ab;
+  background: none;
+}
+.btn svg {
+  width: 25px;
+  height: 25px;
+  padding: 15px;
+}
+.btn.regular {
+  color: #0070ab;
+  background-color: #fefefe;
+}
+.btn.regular svg {
+  fill: #0070ab;
+}
+.btn.regular:hover {
+  background-color: #0070ab;
+  color: #fefefe;
+}
+.btn.regular:hover svg {
+  fill: #fefefe;
+}
+.btn.dark {
+  color: #fefefe;
+  background-color: #0070ab;
+}
+.btn.dark svg {
+  fill: #fefefe;
+}
+.btn.dark:hover {
+  background-color: #fefefe;
+  color: #0070ab;
+}
+.btn.dark:hover svg {
+  fill: #0070ab;
+}
+.btn.rounded {
+  border-radius: 50%;
 }
 
 header {
@@ -139,7 +190,7 @@ header nav ul li a.title:hover {
 header .btn.menu {
   width: 30px;
   height: 30px;
-  fill: #116397;
+  fill: #0b4264;
   display: none;
   opacity: 0.6;
   margin-top: 20px;
@@ -233,27 +284,8 @@ section.general .contact {
   position: absolute;
   right: 0;
 }
-section.general .contact a {
-  display: inline-block;
-  border: 1px solid #0070ab;
-  margin-top: 10px;
-  transition-duration: 0.5s;
-  border-radius: 5px;
-}
-section.general .contact a svg {
-  width: 25px;
-  height: 25px;
-  padding: 15px;
-  fill: #0070ab;
-}
 section.general .contact a p {
   display: none;
-}
-section.general .contact a:hover {
-  background-color: #0070ab;
-}
-section.general .contact a:hover svg {
-  fill: #fefefe;
 }
 @media screen and (max-width: 1000px) {
   section.general {
@@ -285,21 +317,9 @@ section.general .contact a:hover svg {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #0070ab;
-    color: #fefefe;
   }
   section.general .contact a p {
     display: block;
-  }
-  section.general .contact a svg {
-    fill: #fefefe;
-  }
-  section.general .contact a:hover {
-    background-color: #fefefe;
-    color: #0070ab;
-  }
-  section.general .contact a:hover svg {
-    fill: #0070ab;
   }
   section.general .content {
     order: 3;
@@ -311,6 +331,71 @@ section.general .contact a:hover svg {
   }
   section.general .contact a p {
     font-size: 12px;
+  }
+}
+
+section.locations {
+  border: 1px solid #0b4264;
+  padding: 20px;
+}
+section.locations .wrapper-locations {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+section.locations .wrapper-locations article h3 {
+  color: black;
+}
+section.locations .wrapper-locations article address {
+  font-style: normal;
+}
+section.locations .wrapper-locations article address .location {
+  line-height: 25px;
+}
+section.locations .wrapper-locations article address > a {
+  margin: 20px 0;
+  display: inline-block;
+}
+section.locations .wrapper-locations article address .phone, section.locations .wrapper-locations article address .fax {
+  line-height: 30px;
+}
+section.locations .wrapper-locations article address .phone span, section.locations .wrapper-locations article address .fax span {
+  display: inline;
+  margin-right: 5px;
+}
+section.locations button.show-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0070ab;
+  margin-bottom: -45px;
+  margin-top: 20px;
+}
+section.locations button.show-all svg {
+  display: inline-block;
+  padding: 10px;
+  padding-top: 15px;
+  height: 20px;
+}
+@media screen and (max-width: 1100px) {
+  section.locations .wrapper-locations {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 750px) {
+  section.locations .wrapper-locations {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 470px) {
+  section.locations .wrapper-locations {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

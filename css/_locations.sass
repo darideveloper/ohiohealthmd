@@ -1,0 +1,60 @@
+section.locations
+    border: 1px solid $color-b
+    padding: 20px
+
+    .wrapper-locations
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        gap: 20px
+
+        article
+            h3
+                color: black
+
+            address
+                font-style: normal
+
+                .location
+                    line-height: 25px
+
+                > a
+                    margin: 20px 0
+                    display: inline-block
+
+                .phone, .fax
+                    line-height: 30px
+                    span
+                        display: inline
+                        margin-right: 5px
+    
+    button.show-all
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        margin: 0 auto
+        background: none
+        border: none
+        font-size: 16px
+        font-weight: bold
+        color: $color-a
+        margin-bottom: -45px
+        margin-top: 20px
+
+        svg
+            display: inline-block
+            padding: 10px
+            padding-top: 15px
+            height: 20px
+
+    @media screen and (max-width: 1100px)
+        .wrapper-locations
+            grid-template-columns: repeat(3, 1fr)
+
+    @media screen and (max-width: 750px)
+        .wrapper-locations
+            grid-template-columns: repeat(2, 1fr)
+
+    @media screen and (max-width: 470px)
+        .wrapper-locations
+            grid-template-columns: repeat(1, 1fr)
