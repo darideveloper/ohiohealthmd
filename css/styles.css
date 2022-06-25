@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Adelle W01";
+  src: url("../fonts/Adelle W01/Adelle W01 Regular.ttf");
+}
+@font-face {
+  font-family: "Aller";
+  src: url("../fonts/Aller/Aller.ttf");
+}
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fefefe;
+  font-family: "Aller", sans-serif;
+}
+
+.wrapper-img {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper-img img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  font-size: 18px;
+}
+p.small {
+  font-size: 16px;
+}
+
+.hide {
+  display: none !important;
+}
+
+a {
+  text-decoration: none;
+  color: #0070ab;
+}
+
+.regular-width {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.full-width {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, .title {
+  font-family: "Adelle W01", cursive;
+  color: #116397;
+}
+
+*:focus {
+  outline: none;
+}
+
+.paralax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+.btn {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=styles.css.map */
