@@ -91,6 +91,10 @@ section.main-section {
     margin: 50px 10px;
   }
 }
+section.main-section.bordered {
+  border: 1px solid #0b4264;
+  padding: 20px;
+}
 
 p {
   font-size: 16px;
@@ -335,10 +339,6 @@ section.general .contact a p {
   }
 }
 
-section.locations {
-  border: 1px solid #0b4264;
-  padding: 20px;
-}
 section.locations .wrapper-locations {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -413,6 +413,27 @@ section.locations button.show-all.active svg {
   section.locations .wrapper-locations.active {
     height: 1750px;
   }
+}
+
+section.about h3 {
+  font-size: 24px;
+  color: #0070ab;
+  margin-bottom: 15px;
+}
+section.about .content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+section.about .content .hospital, section.about .content .special {
+  width: 50%;
+}
+section.about .content .hospital p {
+  line-height: 32px;
+}
+section.about .content .special img {
+  width: 164px;
+  height: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
