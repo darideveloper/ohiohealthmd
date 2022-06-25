@@ -1,8 +1,45 @@
 .btn
     display: inline-block
+    margin-top: 10px
+    transition-duration: 0.5s
+    border-radius: 5px
+    border: 1px solid $color-a
+    background: none
 
-    // &.cta
+    svg
+        width: 25px
+        height: 25px
+        padding: 15px
 
-    //     &:hover
+    &.regular
 
-    //     &:active
+        color: $color-a
+        background-color: $color-d
+
+        svg
+            fill: $color-a
+
+        &:hover
+            background-color: $color-a
+            color: $color-d
+
+            svg
+                fill: $color-d
+
+    &.dark
+
+        color: $color-d
+        background-color: $color-a
+
+        svg
+            fill: $color-d
+
+        &:hover
+            background-color: $color-d
+            color: $color-a
+
+            svg
+                fill: $color-a
+
+    &.rounded
+        border-radius: 50%

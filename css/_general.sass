@@ -44,26 +44,9 @@ section.general
         right: 0
 
         a
-            display: inline-block
-            border: 1px solid $color-a
-            margin-top: 10px
-            transition-duration: 0.5s
-            border-radius: 5px
-
-            svg
-                width: 25px
-                height: 25px
-                padding: 15px
-                fill: $color-a
 
             p
                 display: none
-
-            &:hover
-                background-color: $color-a
-
-                svg
-                    fill: $color-d
 
     @media screen and (max-width: 1000px)
         flex-direction: column
@@ -94,22 +77,10 @@ section.general
                 display: flex
                 align-items: center
                 justify-content: center
-                background-color: $color-a
-                color: $color-d
 
                 p
                     display: block
-                
-                svg
-                    fill: $color-d
-
-                &:hover
-                    background-color: $color-d
-                    color: $color-a
-
-                    svg
-                        fill: $color-a
-
+            
         .content
             order: 3
     
