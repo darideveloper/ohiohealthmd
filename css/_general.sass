@@ -48,6 +48,7 @@ section.general
             border: 1px solid $color-a
             margin-top: 10px
             transition-duration: 0.5s
+            border-radius: 5px
 
             svg
                 width: 25px
@@ -55,9 +56,72 @@ section.general
                 padding: 15px
                 fill: $color-a
 
+            p
+                display: none
+
             &:hover
                 background-color: $color-a
 
                 svg
                     fill: $color-d
+
+    @media screen and (max-width: 1000px)
+        flex-direction: column
+        align-items: flex-start
+        justify-content: center
+
+        img
+            margin: 0
+            margin-bottom: 30px
+
+        .contact
+            top: 50px
+
+    @media screen and (max-width: 600px)
+
+        img
+            order: 1
+        
+        .contact
+            position: initial
+            order: 2
+            margin-bottom: 30px
+            width: 100%
+            align-items: flex-start
+
+            a 
+                width: 100%
+                display: flex
+                align-items: center
+                justify-content: center
+                background-color: $color-a
+                color: $color-d
+
+                p
+                    display: block
+                
+                svg
+                    fill: $color-d
+
+                &:hover
+                    background-color: $color-d
+                    color: $color-a
+
+                    svg
+                        fill: $color-a
+
+        .content
+            order: 3
+    
+    @media screen and (max-width: 450px)
+        img
+            width: calc(100% - 30px)
+        
+        .contact a p
+            font-size: 12px
+
+        
+
+
+
                 

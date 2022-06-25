@@ -72,6 +72,11 @@ h1, h2, h3, h4, h5, h6, .title {
 section.main-section {
   margin: 50px;
 }
+@media screen and (max-width: 600px) {
+  section.main-section {
+    margin: 50px 10px;
+  }
+}
 
 h1 {
   font-size: 40px;
@@ -233,6 +238,7 @@ section.general .contact a {
   border: 1px solid #0070ab;
   margin-top: 10px;
   transition-duration: 0.5s;
+  border-radius: 5px;
 }
 section.general .contact a svg {
   width: 25px;
@@ -240,11 +246,72 @@ section.general .contact a svg {
   padding: 15px;
   fill: #0070ab;
 }
+section.general .contact a p {
+  display: none;
+}
 section.general .contact a:hover {
   background-color: #0070ab;
 }
 section.general .contact a:hover svg {
   fill: #fefefe;
+}
+@media screen and (max-width: 1000px) {
+  section.general {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  section.general img {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  section.general .contact {
+    top: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  section.general img {
+    order: 1;
+  }
+  section.general .contact {
+    position: initial;
+    order: 2;
+    margin-bottom: 30px;
+    width: 100%;
+    align-items: flex-start;
+  }
+  section.general .contact a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0070ab;
+    color: #fefefe;
+  }
+  section.general .contact a p {
+    display: block;
+  }
+  section.general .contact a svg {
+    fill: #fefefe;
+  }
+  section.general .contact a:hover {
+    background-color: #fefefe;
+    color: #0070ab;
+  }
+  section.general .contact a:hover svg {
+    fill: #0070ab;
+  }
+  section.general .content {
+    order: 3;
+  }
+}
+@media screen and (max-width: 450px) {
+  section.general img {
+    width: calc(100% - 30px);
+  }
+  section.general .contact a p {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
