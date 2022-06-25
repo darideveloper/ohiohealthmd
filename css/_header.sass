@@ -30,6 +30,58 @@ header
                     font-size: 20px
                     display: inline-block
                     padding: 30px
+                    transition-duration: 0.5s
 
                     &:hover
                         color: rgba($color-d, 0.7)
+    
+    .btn.menu
+        width: 30px
+        height: 30px
+        fill: $color-b
+        display: none
+        opacity: 0.6
+        margin-top: 20px
+        cursor: pointer
+
+    @media screen and (max-width: 900px)
+        nav ul li a.title
+            padding: 15px
+
+    @media screen and (max-width: 750px)
+        background-color: $color-d
+        border-bottom: 1px solid grey
+        padding: 0 30px
+        position: relative
+        align-items: flex-start
+        height: 72px
+        transition-duration: 0.5s
+        overflow: hidden
+
+
+        nav
+            display: block
+            position: absolute
+            top: 72px
+            width: calc(100% - 60px)
+
+            & ul 
+                flex-direction: column
+                width: 100%
+
+                li a.title
+                    color: $color-a
+
+        .btn.menu
+            display: inline-block
+            transition-duration: 0.5s
+        
+        .logo
+            padding: 10px
+
+        &.active
+            height: 300px
+
+            .btn.menu
+                transform: rotateZ(180deg)
+

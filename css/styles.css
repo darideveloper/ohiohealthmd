@@ -112,9 +112,62 @@ header nav ul li a.title {
   font-size: 20px;
   display: inline-block;
   padding: 30px;
+  transition-duration: 0.5s;
 }
 header nav ul li a.title:hover {
   color: rgba(254, 254, 254, 0.7);
+}
+header .btn.menu {
+  width: 30px;
+  height: 30px;
+  fill: #116397;
+  display: none;
+  opacity: 0.6;
+  margin-top: 20px;
+  cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  header nav ul li a.title {
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 750px) {
+  header {
+    background-color: #fefefe;
+    border-bottom: 1px solid grey;
+    padding: 0 30px;
+    position: relative;
+    align-items: flex-start;
+    height: 72px;
+    transition-duration: 0.5s;
+    overflow: hidden;
+  }
+  header nav {
+    display: block;
+    position: absolute;
+    top: 72px;
+    width: calc(100% - 60px);
+  }
+  header nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  header nav ul li a.title {
+    color: #0070ab;
+  }
+  header .btn.menu {
+    display: inline-block;
+    transition-duration: 0.5s;
+  }
+  header .logo {
+    padding: 10px;
+  }
+  header.active {
+    height: 300px;
+  }
+  header.active .btn.menu {
+    transform: rotateZ(180deg);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
