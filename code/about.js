@@ -9,6 +9,10 @@ function hide_details_elems () {
         for (const details_elem of details_elems) {
             details_elem.classList.add ("hide")
         }
+    } else {
+        for (const details_elem of details_elems) {
+            details_elem.classList.remove ("hide")
+        }
     }
 }
 
