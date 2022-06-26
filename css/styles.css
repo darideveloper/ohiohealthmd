@@ -513,10 +513,17 @@ footer {
   justify-content: space-between;
   padding: 5px 50px;
 }
+footer img {
+  height: 30px;
+  width: auto;
+}
+footer small {
+  font-size: 10px;
+}
 footer a {
   color: #fefefe;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 515px) {
   footer {
     flex-direction: column;
   }
