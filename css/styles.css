@@ -481,4 +481,17 @@ section.about .content .special img {
   }
 }
 
+section.credentials .row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px 10px;
+}
+section.credentials .row:nth-child(odd) {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+section.credentials .row span {
+  width: 250px;
+}
+
 /*# sourceMappingURL=styles.css.map */
