@@ -78,13 +78,16 @@ h3
 
 section.main-section
     margin: 50px
+    padding: 20px
 
     @media screen and (max-width: 600px)
         margin: 50px 10px
 
+        &.bordered
+            border: none !important
+
     &.bordered
         border: 1px solid $color-b
-        padding: 20px
 
 p
     font-size: 16px

@@ -85,15 +85,18 @@ h3 {
 
 section.main-section {
   margin: 50px;
+  padding: 20px;
 }
 @media screen and (max-width: 600px) {
   section.main-section {
     margin: 50px 10px;
   }
+  section.main-section.bordered {
+    border: none !important;
+  }
 }
 section.main-section.bordered {
   border: 1px solid #0b4264;
-  padding: 20px;
 }
 
 p {
