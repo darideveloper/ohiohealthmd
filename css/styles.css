@@ -493,5 +493,16 @@ section.credentials .row:nth-child(odd) {
 section.credentials .row span {
   width: 250px;
 }
+@media screen and (max-width: 900px) {
+  section.credentials .row {
+    display: block;
+  }
+  section.credentials .row:nth-child(odd) {
+    background-color: white;
+  }
+  section.credentials .row span {
+    margin-bottom: 10px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
