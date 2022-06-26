@@ -505,4 +505,25 @@ section.credentials .row span {
   }
 }
 
+footer {
+  background-color: #0b4264;
+  color: #fefefe;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 50px;
+}
+footer a {
+  color: #fefefe;
+}
+@media screen and (max-width: 700px) {
+  footer {
+    flex-direction: column;
+  }
+  footer small {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
