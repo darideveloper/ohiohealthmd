@@ -37,7 +37,15 @@
         <symbol id="svg-email" class="svg_elem" viewBox="0 0 24 24"  style="fill-rule:evenodd;clip-rule:evenodd; stroke-linejoin:round;stroke-miterlimit:1.41421;">
             <path d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z"/>
         </symbol>
-
+        <symbol id="svg-plus" class="svg_elem" viewBox="0 0 24 24"  style="fill-rule:evenodd;clip-rule:evenodd; stroke-linejoin:round;stroke-miterlimit:1.41421;">
+            <path d="m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z" fill-rule="nonzero"/>
+        </symbol>
+        <symbol id="svg-plus" class="svg_elem" viewBox="0 0 24 24"  style="fill-rule:evenodd;clip-rule:evenodd; stroke-linejoin:round;stroke-miterlimit:1.41421;">
+            <path d="m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z" fill-rule="nonzero"/>
+        </symbol>
+        <symbol id="svg-minus" class="svg_elem" viewBox="0 0 24 24"  style="fill-rule:evenodd;clip-rule:evenodd; stroke-linejoin:round;stroke-miterlimit:1.41421;">
+            <path d="m21 11.75c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"/>
+        </symbol>
 
     </svg>
 
@@ -248,24 +256,45 @@
         <section class="about main-section bordered" id="about">
             <h2>About</h2>
             <div class="content">
+                <hr>
                 <div class="hospital">
-                    <h3>Hospital Status</h3>
-                    <p>
-                        <span>Active at:</span>
-                        <a href="http://www.ohiohealth.com/locations/hospitals/grant-medical-center/">Grant Medical Center
-                        </a>
-                        <br>
-                        <a href="http://www.ohiohealth.com/locations/hospitals/riverside-methodist-hospital/">Riverside Methodist Hospital</a>
-                    </p>
-                    <p>
-                        <span>Courtesy at:</span>
-                        <a href="http://www.ohiohealth.com/locations/hospitals/dublin-methodist-hospital/">Dublin Methodist Hospital</a>
-                    </p>
+                    <div class="title">
+                        <h3>Hospital Status</h3>
+                        <button class="btn phantom">
+                            <svg>
+                                <use xlink:href="#svg-plus"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="details">
+                        <p>
+                            <span>Active at:</span>
+                            <a href="http://www.ohiohealth.com/locations/hospitals/grant-medical-center/">Grant Medical Center
+                            </a>
+                            <br>
+                            <a href="http://www.ohiohealth.com/locations/hospitals/riverside-methodist-hospital/">Riverside Methodist Hospital</a>
+                        </p>
+                        <p>
+                            <span>Courtesy at:</span>
+                            <a href="http://www.ohiohealth.com/locations/hospitals/dublin-methodist-hospital/">Dublin Methodist Hospital</a>
+                        </p>
+                    </div>
                 </div>
+                <hr>
                 <div class="special">
-                    <h3>Special Affiliation</h3>
-                    <img src="./imgs/special affiliation.webp" alt="Special Affilation: OHIOHEALTH Clinically Integrated NETWORK    ">
+                    <div class="title">
+                        <h3>Special Affiliation</h3>
+                        <button class="btn phantom">
+                            <svg>
+                                <use xlink:href="#svg-plus"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="details">
+                        <img src="./imgs/special affiliation.webp" alt="Special Affilation: OHIOHEALTH Clinically Integrated NETWORK    ">
+                    </div>
                 </div>
+                <hr>
             </div>
         </section>
 
@@ -308,5 +337,6 @@
     <script src="./code/header.js"></script>
     <script src="./code/general.js"></script>
     <script src="./code/locations.js"></script>
+    <script src="./code/about.js"></script>
 </body>
 </html>

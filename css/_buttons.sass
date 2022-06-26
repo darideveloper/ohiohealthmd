@@ -3,9 +3,9 @@
     margin-top: 10px
     transition-duration: 0.5s
     border-radius: 5px
-    border: 1px solid $color-a
     background: none
     cursor: pointer
+    border: none
 
     svg
         width: 25px
@@ -13,7 +13,7 @@
         padding: 15px
 
     &.regular
-
+        border: 1px solid $color-a
         color: $color-a
         background-color: $color-d
 
@@ -44,3 +44,11 @@
 
     &.rounded
         border-radius: 50%
+
+    &.phantom
+        svg
+            fill: $color-b
+            
+        &:hover
+            svg
+                fill: rgba($color-b, 0.5)

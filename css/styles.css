@@ -114,9 +114,9 @@ p span {
   margin-top: 10px;
   transition-duration: 0.5s;
   border-radius: 5px;
-  border: 1px solid #0070ab;
   background: none;
   cursor: pointer;
+  border: none;
 }
 .btn svg {
   width: 25px;
@@ -124,6 +124,7 @@ p span {
   padding: 15px;
 }
 .btn.regular {
+  border: 1px solid #0070ab;
   color: #0070ab;
   background-color: #fefefe;
 }
@@ -153,6 +154,12 @@ p span {
 }
 .btn.rounded {
   border-radius: 50%;
+}
+.btn.phantom svg {
+  fill: #0b4264;
+}
+.btn.phantom:hover svg {
+  fill: rgba(11, 66, 100, 0.5);
 }
 
 header {
@@ -415,10 +422,24 @@ section.locations button.show-all.active svg {
   }
 }
 
-section.about h3 {
+section.about hr {
+  display: none;
+}
+section.about .title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+section.about .title h3 {
   font-size: 24px;
   color: #0070ab;
   margin-bottom: 15px;
+  margin: 0;
+  padding: 15px 0;
+}
+section.about .title .btn {
+  display: none;
 }
 section.about .content {
   display: flex;
@@ -434,6 +455,27 @@ section.about .content .hospital p {
 section.about .content .special img {
   width: 164px;
   height: auto;
+}
+@media screen and (max-width: 800px) {
+  section.about hr {
+    width: 100%;
+    display: block;
+  }
+  section.about .title {
+    justify-content: space-between;
+  }
+  section.about .title h3 {
+    font-size: 20px;
+  }
+  section.about .title .btn {
+    display: inline-block;
+  }
+  section.about .content {
+    flex-direction: column;
+  }
+  section.about .content .hospital, section.about .content .special {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

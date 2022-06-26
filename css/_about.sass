@@ -1,8 +1,24 @@
 section.about
-    h3
-        font-size: 24px
-        color: $color-a
-        margin-bottom: 15px
+
+    hr
+        display: none
+
+    .title
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        width: 100%
+
+        h3
+            font-size: 24px
+            color: $color-a
+            margin-bottom: 15px
+            margin: 0
+            padding: 15px 0
+
+        .btn
+            display: none
+
     
     .content
         display: flex
@@ -20,3 +36,26 @@ section.about
             img
                 width: 164px
                 height: auto
+
+    @media screen and (max-width: 800px)
+
+        hr
+            width: 100%
+            display: block
+
+        .title
+            justify-content: space-between
+
+            h3
+                font-size: 20px
+
+            .btn
+                display: inline-block
+
+        .content
+            flex-direction: column
+
+            .hospital, .special
+                width: 100%
+            
+
