@@ -347,6 +347,9 @@ section.general .contact a p {
   section.general .contact a p {
     font-size: 12px;
   }
+  section.general .contact a svg {
+    padding-left: 0;
+  }
 }
 
 section.locations .wrapper-locations {
