@@ -7,11 +7,10 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/x-icon" href="./imgs/favicon.webp">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>OhioHealth | Gregory H Decker, MD</title>
-
     <meta name="description" content="Gregory H Decker, MD, Ohioheald profile page">
     <meta name="keywords" content="MD, Gregory, Medicine, Doctor, Emergency, Mid-Ohio, Services, Ohio, University, Hospitals, Riverside, Methodist, Hospital, Health">
     <meta name="author" content="Dari Developer">
+    <title>OhioHealth | Gregory H Decker, MD</title>
 </head>
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -53,8 +52,8 @@
 
     <main>
         <section class="general main-section">
-            <img src="./imgs/photo.png" alt="Gregory H Decker Photo" class="photo">
-            <div class="content">
+            <img src="./imgs/photo.png" alt="Gregory H Decker Photo" class="photo" data-aos="fade-up">
+            <div class="content" data-aos="fade-up">
                 <p class="status">
                     <span class="circle active"></span>
                     Accepting New Patients
@@ -75,7 +74,7 @@
                     37 Years
                 </p>
             </div>
-            <div class="contact">
+            <div class="contact" data-aos="fade-up">
                 <p>
                     <span>CONTACT</span>
                 </p>
@@ -94,7 +93,7 @@
             </div>
         </section>
 
-        <section class="locations main-section bordered" id="locations">
+        <section class="locations main-section bordered" id="locations" data-aos="fade-up" >
             <h2>Locations</h2>
             <div class="wrapper-locations">
                 <article class="location">
@@ -238,7 +237,7 @@
             </button>
         </section>
 
-        <section class="about main-section bordered" id="about">
+        <section class="about main-section bordered" id="about" data-aos="fade-up" >
             <h2>About</h2>
             <div class="content">
                 <hr>
@@ -283,7 +282,7 @@
             </div>
         </section>
 
-        <section class="credentials main-section bordered" id="credentials">
+        <section class="credentials main-section bordered" id="credentials" data-aos="fade-up" >
             <h2>Credentials</h2>
             <h3>Education and Board Certifications</h3>
             <p class="row">
@@ -310,16 +309,17 @@
         <small>©2022 ALL RIGHTS RESERVED. POWERED BY <a href="https://www.darideveloper.com/">DARI DEVELOPER</a></small>
     </footer>
 
+    
+    <script src="./code/header.js"></script>
+    <script src="./code/general.js"></script>
+    <script src="./code/locations.js"></script>
+    <script src="./code/about.js"></script>
+
     <!-- Aos imports -->
     <!-- <script type="text/javascript" src="code/aos.js"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-
-    <script src="./code/header.js"></script>
-    <script src="./code/general.js"></script>
-    <script src="./code/locations.js"></script>
-    <script src="./code/about.js"></script>
 </body>
 </html>
