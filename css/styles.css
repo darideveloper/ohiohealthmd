@@ -505,6 +505,57 @@ section.credentials .row span {
   }
 }
 
+form h2 {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+form fieldset {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16), 0 2px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 5px;
+  margin-bottom: 50px;
+  border: none;
+}
+form fieldset .left, form fieldset .right {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+form fieldset .left label, form fieldset .right label {
+  font-size: 22px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+form fieldset .left input, form fieldset .left textarea, form fieldset .right input, form fieldset .right textarea {
+  display: block;
+  width: calc(100% - 40px);
+  border: none;
+  background-color: rgba(128, 128, 128, 0.1);
+  margin-bottom: 20px;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+form fieldset .left input.validate:invalid, form fieldset .left textarea.validate:invalid, form fieldset .right input.validate:invalid, form fieldset .right textarea.validate:invalid {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+form fieldset .left textarea, form fieldset .right textarea {
+  resize: none;
+  height: 135px;
+}
+form fieldset .left .btn.regular, form fieldset .right .btn.regular {
+  width: 100%;
+}
+
 footer {
   background-color: #0b4264;
   color: #fefefe;

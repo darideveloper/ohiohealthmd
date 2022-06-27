@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/x-icon" href="../imgs/favicon.webp">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="description" content="Gregory H Decker, MD, Ohioheald profile page">
+    <meta name="keywords" content="Contact, MD, Gregory, Medicine, Doctor, Emergency, Mid-Ohio, Services, Ohio, University, Hospitals, Riverside, Methodist, Hospital, Health">
+    <meta name="author" content="Dari Developer">
+    <title>Contact | Gregory H Decker, MD</title>
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+        <symbol id="svg-arrow" class="svg_elem" viewBox="0 0 24 24"  style="fill-rule:evenodd;clip-rule:evenodd; sdivoke-linejoin:round;sdivoke-miterlimit:1.41421;">
+            <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
+        </symbol>
+        <symbol id="svg-phone" class="svg_elem" viewBox="0 0 24 24"  style="fill-rule:evenodd;clip-rule:evenodd; sdivoke-linejoin:round;sdivoke-miterlimit:1.41421;">
+            <path d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"/>
+        </symbol>
+        <symbol id="svg-email" class="svg_elem" viewBox="0 0 24 24"  style="fill-rule:evenodd;clip-rule:evenodd; sdivoke-linejoin:round;sdivoke-miterlimit:1.41421;">
+            <path d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z"/>
+        </symbol>
+        <symbol id="svg-plus" class="svg_elem" viewBox="0 0 24 24"  style="fill-rule:evenodd;clip-rule:evenodd; sdivoke-linejoin:round;sdivoke-miterlimit:1.41421;">
+            <path d="m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z" fill-rule="nonzero"/>
+        </symbol>
+        <symbol id="svg-minus" class="svg_elem" viewBox="0 0 24 24"  style="fill-rule:evenodd;clip-rule:evenodd; sdivoke-linejoin:round;sdivoke-miterlimit:1.41421;">
+            <path d="m21 11.75c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"/>
+        </symbol>
+
+    </svg>
+
+    <header>
+        <div class="wrapper-img logo">
+            <img src="../imgs/logo.webp" alt="Ohiohealth logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#locations" class="title">Locations</a></li>
+                <li><a href="#about" class="title">About</a></li>
+                <li><a href="#credentials" class="title">Credentials</a></li>
+                <li><a href="../contact" class="title">Contact Form</a></li>
+            </ul>
+        </nav>
+        <svg class="btn menu">
+            <use xlink:href="#svg-arrow"></use>
+        </svg>
+    </header>
+
+    <main>
+        <section class="general main-section">
+            <img src="../imgs/photo.png" alt="Gregory H Decker Photo" class="photo" data-aos="fade-up">
+            <div class="content" data-aos="fade-up">
+                <p class="status">
+                    <span class="circle active"></span>
+                    Accepting New Patients
+                </p>
+                <h1>Gregory H Decker, MD</h1>
+                <a href="tel:6148106962" class="phone">
+                    <svg>
+                        <use xlink:href="#svg-phone"></use>
+                    </svg>
+                    (614) 810-6962
+                </a>
+                <p class="info">
+                    <span>Specialties:</span>
+                    Emergency Medicine
+                </p>
+                <p class="info">
+                    <span>Experience:</span>
+                    37 Years
+                </p>
+            </div>
+            <div class="contact" data-aos="fade-up">
+                <p>
+                    <span>CONTACT</span>
+                </p>
+                <a href="tel:6148106962" class="phone btn regular">
+                    <svg>
+                        <use xlink:href="#svg-phone"></use>
+                    </svg>
+                    <p>(614) 810-6962</p>
+                </a>
+                <a href="mailto:Gregory.Decker@ohiohealthmd.com" class="email btn regular">
+                    <svg>
+                        <use xlink:href="#svg-email"></use>
+                    </svg>
+                    <p>Gregory.Decker@ohiohealthmd.com</p>
+                </a>
+            </div>
+        </section>
+
+        
+        <form action="https://darideveloper.pythonanywhere.com/contactforms-api/" method="post">
+            <h2>Write me</h2>
+            <fieldset>
+
+                <div class="left">
+                    <label>
+                        Name
+                        <input type="text" name="name" id="name" required>
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" name="email" id="email" required>
+                    </label>
+                    <label>
+                        Phone (optional)
+                        <input type="tel" name="phone" id="phone">
+                    </label>
+                </div>
+                <div class="right">
+                    <label>
+                        Details
+                        <textarea name="details" id="details"></textarea required>
+                    </label>
+                    <input type="submit" value="Submit" class="btn regular">
+                </div>
+                <input type="hidden" name="user" id="user" value="ohiohealthmd">
+                <input type="hidden" name="api_key" id="api_key" value="883ixhdrkl8gaydapr51pjoc2h9wu0s8">
+                <input type="hidden" name="redirect" id="redirect" value="https://darihernandez.github.io/ohiohealthmd/?thanks=true">
+            </fieldset>
+        </form>
+
+    </main>
+
+    <footer>
+        <img src="../imgs/logo white.webp" alt="company logo" class="logo">
+        <small>©2022 ALL RIGHTS RESERVED. POWERED BY <a href="https://www.darideveloper.com/">DARI DEVELOPER</a></small>
+    </footer>
+
+    
+    <script src="../code/header.js"></script>
+    <script src="../code/general.js"></script>
+    <script src="../code/contact-form.js"></script>
+
+    <!-- Aos imports -->
+    <!-- <script type="text/javascript" src="code/aos.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
