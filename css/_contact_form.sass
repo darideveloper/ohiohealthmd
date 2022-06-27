@@ -1,7 +1,6 @@
 form
 
     h2
-        width: 100%
         max-width: 1000px
         margin: 0 auto
         margin-bottom: 20px
@@ -10,7 +9,6 @@ form
         display: flex
         align-items: flex-start
         justify-content: center
-        width: 100%
         max-width: 1000px
         margin: 0 auto
         box-shadow: 0 2px 6px rgb(0 0 0 / 16%), 0 2px 6px rgb(0 0 0 / 23%)
@@ -49,3 +47,28 @@ form
 
             .btn.regular
                 width: 100%
+
+    @media screen and (max-width: 900px)
+        fieldset
+            flex-direction: column
+
+            .left, .right
+                width: calc(100% - 40px)
+
+            .right
+                padding-top: 0
+
+            .left
+                padding-bottom: 0
+
+    @media screen and (max-width: 450px)
+        fieldset
+            padding: 0
+            box-shadow: none
+
+            .left, .right
+                padding: 0
+                width: 100%
+
+
+    
