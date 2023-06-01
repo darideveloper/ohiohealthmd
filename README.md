@@ -53,9 +53,9 @@ Landing page with scroll animation, contact form, locations, about and credentia
 
 # Roadmap
 
-* [X] Landing\r
-* [X] Responsive\r
-* [X] Contact form\r
-\t* [X] Confirmation after submit
+* [X] Landing
+* [X] Responsive
+* [X] Contact form
+t* [X] Confirmation after submit
 
 
