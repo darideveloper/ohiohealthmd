@@ -56,6 +56,6 @@ Landing page with scroll animation, contact form, locations, about and credentia
 * [X] Landing
 * [X] Responsive
 * [X] Contact form
-t* [X] Confirmation after submit
+	* [X] Confirmation after submit
 
 
